@@ -1,17 +1,24 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+let profileDataFromStorage = localStorage.getItem('profileData') ? JSON.parse(localStorage.getItem('profileData')) : {} ;
+
 const profileReducer = createSlice({
     name:'resumeData',
     initialState:{
-        profileData : {}
+        profileData : profileDataFromStorage,
+        success : false
     },
     reducers : {
         submitProfileData : (state,action) => {
             state.profileData = action.payload;
+            state.success = true;
+        },
+        resetSuccess : (state,action) => {
+            state.success = false;
         }
     }
 });
 
-export const { submitProfileData } = profileReducer.actions;
+export const { submitProfileData , resetSuccess } = profileReducer.actions;
 
 export default profileReducer.reducer;

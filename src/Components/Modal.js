@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
+import { useNavigate } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -19,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CreateResumeModal({ open,setOpen }) {
+export default function CreateResume({ open,setOpen }) {
   const classes = useStyles();
 
   const handleClose = () => {
@@ -29,6 +30,8 @@ export default function CreateResumeModal({ open,setOpen }) {
   const handleOpen = () => {
       setOpen(true);
   }
+
+  const navigate = useNavigate();
 
   return (
     <div>
@@ -49,7 +52,7 @@ export default function CreateResumeModal({ open,setOpen }) {
             <h4>
                 Create interesting resumes with Us...
             </h4>
-            <button className='confirmButton' > Create Your Resume Now </button>
+            <button className='confirmButton'onClick={()=>navigate('/createResume')} > Create Your Resume Now </button>
           </div>
         </Fade>
       </Modal>
