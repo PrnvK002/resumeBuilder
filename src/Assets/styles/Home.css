@@ -1,0 +1,63 @@
+/* Top section of the home page */
+.topSection{
+    height: 80vh;
+    background: url('../backgroundImages/smallBackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;  
+  color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.topSection > h2 {
+    font-size: 5rem;
+}
+.topSection > h5{
+    font-size: 1.5rem;
+}
+/* create button in the home page */
+.createButton{
+    width: 8rem;
+    background-color: #130336;
+    border: none;
+    height: 2.5rem;
+    border-radius: 10px;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+
+}
+
+/* Confirm button in the modal */
+
+.confirmButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 1rem;
+    background-color: #130336;
+    border: none;
+    height: 2.5rem;
+    border-radius: 10px;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+}
+
+/* input styling in the contact page */
+
+.inputContact{
+    height: 3rem;
+    width: 20rem;
+    margin : 1rem;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+.inputContact:focus{
+    outline-style: outset;
+}
