@@ -4,9 +4,9 @@ import Container from '@mui/material/Container';
 
 export default function Footer() {
     return (
-        <Container>
+        <Container style={{ textAlign:'center' }} >
             <Typography variant="body2" color="text.secondary">
-                {'Copyright © '}
+                {'Copyright © '} claimed by owners of this website
             </Typography>
         </Container>
     );

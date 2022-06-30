@@ -18,19 +18,40 @@
 .topSection > h5{
     font-size: 1.5rem;
 }
+
+.midSection{
+    height: 80vh;
+    background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomSection{
+    height: 80vh;
+    background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* create button in the home page */
 .createButton{
     width: 8rem;
-    background-color: #130336;
     border: none;
     height: 2.5rem;
     border-radius: 10px;
     color: white;
     font-size: medium;
     font-weight: bold;
-
+    background-color:transparent;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
 }
-
+.createButton:hover{
+    background-color: #130336;
+}
 /* Confirm button in the modal */
 
 .confirmButton{

@@ -49,7 +49,7 @@ export default function CreateResume({ open,setOpen }) {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <h4>
+            <h4 style={{ margin:'1rem' }} >
                 Create interesting resumes with Us...
             </h4>
             <button className='confirmButton'onClick={()=>navigate('/createResume')} > Create Your Resume Now </button>

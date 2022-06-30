@@ -11,6 +11,7 @@ const profileReducer = createSlice({
     reducers : {
         submitProfileData : (state,action) => {
             state.profileData = action.payload;
+            localStorage.setItem('profileData',JSON.stringify(action.payload));
             state.success = true;
         },
         resetSuccess : (state,action) => {
